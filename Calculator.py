@@ -27,10 +27,13 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_8.clicked.connect(self.digitClicked)
         self.pushButton_9.clicked.connect(self.digitClicked)
 
+        self.pushButton_A.clicked.connect(self.letterClicked)
+        self.pushButton_B.clicked.connect(self.letterClicked)
+        self.pushButton_C.clicked.connect(self.letterClicked)
+        self.pushButton_D.clicked.connect(self.letterClicked)
+        self.pushButton_E.clicked.connect(self.letterClicked)
+        self.pushButton_F.clicked.connect(self.letterClicked)
 
-
-
-        # self.pushButton_A.clicked.connect(self.letterClicked)
 
 
         self.pushButton_decimal.clicked.connect(self.decimalClicked)
@@ -58,6 +61,14 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_multiply.setCheckable(True)
         self.pushButton_divide.setCheckable(True)
 
+        self.pushButton_A.setCheckable(True)
+        self.pushButton_B.setCheckable(True)
+        self.pushButton_C.setCheckable(True)
+        self.pushButton_D.setCheckable(True)
+        self.pushButton_E.setCheckable(True)
+        self.pushButton_F.setCheckable(True)
+
+
 
     def digitClicked(self):
         button = self.sender()
@@ -78,7 +89,22 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
     def letterClicked(self):
-        pass
+        button = self.sender()
+
+        if ((self.pushButton_A.isChecked() or 
+            self.pushButton_B.isChecked() or 
+            self.pushButton_C.isChecked() or 
+            self.pushButton_D.isChecked() or
+            self.pushButton_E.isChecked() or
+            self.pushButton_F.isChecked()) and (not self.userIsTypingSecondNumber)):
+            newLabel = format(str(button.text()), '.15s')
+            self.userIsTypingSecondNumber = True
+        elif (('.' in self.label.text()) and button.text() == '0'):
+            newLabel = format(self.label.text() + button.text(),'.15')
+        else:
+            newLabel = format(str(self.label.text() + button.text()), '.15')
+
+        self.label.setText(newLabel)
 
 
 
