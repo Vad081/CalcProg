@@ -222,6 +222,10 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.label.setText(newLabel)
 
 
+    
+
+
+
 
     
 

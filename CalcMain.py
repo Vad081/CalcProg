@@ -253,7 +253,7 @@ class Ui_MainWindow(object):
         self.pushButton_allClear = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_allClear.setGeometry(QtCore.QRect(270, 90, 91, 61))
         self.pushButton_allClear.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -267,7 +267,7 @@ class Ui_MainWindow(object):
         self.pushButton_unaryMinus = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_unaryMinus.setGeometry(QtCore.QRect(360, 90, 91, 61))
         self.pushButton_unaryMinus.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -281,7 +281,7 @@ class Ui_MainWindow(object):
         self.pushButton_multiply = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_multiply.setGeometry(QtCore.QRect(270, 150, 91, 61))
         self.pushButton_multiply.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -295,7 +295,7 @@ class Ui_MainWindow(object):
         self.pushButton_divide = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_divide.setGeometry(QtCore.QRect(360, 150, 91, 61))
         self.pushButton_divide.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -309,7 +309,7 @@ class Ui_MainWindow(object):
         self.pushButton_plus = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_plus.setGeometry(QtCore.QRect(270, 210, 91, 61))
         self.pushButton_plus.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -323,7 +323,7 @@ class Ui_MainWindow(object):
         self.pushButton_minus = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_minus.setGeometry(QtCore.QRect(360, 210, 91, 61))
         self.pushButton_minus.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -337,7 +337,7 @@ class Ui_MainWindow(object):
         self.pushButton_sqrt = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_sqrt.setGeometry(QtCore.QRect(270, 270, 91, 61))
         self.pushButton_sqrt.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -351,7 +351,7 @@ class Ui_MainWindow(object):
         self.pushButton_rd = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_rd.setGeometry(QtCore.QRect(360, 270, 91, 61))
         self.pushButton_rd.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -365,7 +365,7 @@ class Ui_MainWindow(object):
         self.pushButton_percent = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_percent.setGeometry(QtCore.QRect(270, 330, 91, 61))
         self.pushButton_percent.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -379,7 +379,7 @@ class Ui_MainWindow(object):
         self.pushButton_pi = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_pi.setGeometry(QtCore.QRect(360, 330, 91, 61))
         self.pushButton_pi.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
@@ -393,7 +393,7 @@ class Ui_MainWindow(object):
         self.pushButton_equals = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_equals.setGeometry(QtCore.QRect(270, 390, 181, 61))
         self.pushButton_equals.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(255, 157, 57);\n"
+"  background-color: rgb(255, 157, 0);\n"
 "  color: white; \n"
 "  border: 1px solid gray;\n"
 "  font-size: 16pt;\n"
