@@ -194,7 +194,7 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         button = self.sender()
         labelNumber = self.label.text()
         if button.text() == 'sqrt' and float(labelNumber) > 0:
-            labelNumber = sqrt(labelNumber)
+            labelNumber = sqrt(float(labelNumber))
             newLabel = format(labelNumber, '.15g')
             self.label.setText(newLabel)
         else:
