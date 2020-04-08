@@ -1,11 +1,11 @@
 from PyQt5 import QtWidgets
-from CalcMain import Ui_MainWindow
+from CalcMain import Ui_Calculator
 
 from math import pi,sqrt
 from random import uniform
 
 
-class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
+class CalculatorWindow(QtWidgets.QMainWindow, Ui_Calculator):
 
     firstNum = None
     userIsTypingSecondNumber = False
