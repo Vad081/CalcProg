@@ -27,12 +27,12 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_8.clicked.connect(self.digitClicked)
         self.pushButton_9.clicked.connect(self.digitClicked)
 
-        self.pushButton_A.clicked.connect(self.letterClicked)
-        self.pushButton_B.clicked.connect(self.letterClicked)
-        self.pushButton_C.clicked.connect(self.letterClicked)
-        self.pushButton_D.clicked.connect(self.letterClicked)
-        self.pushButton_E.clicked.connect(self.letterClicked)
-        self.pushButton_F.clicked.connect(self.letterClicked)
+        # self.pushButton_A.clicked.connect(self.letterClicked)
+        # self.pushButton_B.clicked.connect(self.letterClicked)
+        # self.pushButton_C.clicked.connect(self.letterClicked)
+        # self.pushButton_D.clicked.connect(self.letterClicked)
+        # self.pushButton_E.clicked.connect(self.letterClicked)
+        # self.pushButton_F.clicked.connect(self.letterClicked)
 
 
 
@@ -55,18 +55,26 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_oct.clicked.connect(self.numberSystemsClicked)
         self.pushButton_hex.clicked.connect(self.numberSystemsClicked)
 
+        self.pushButton_convert.clicked.connect(self.convertGetResulst)
+
+        # self.pushButton_bin.clicked.connect(self.binSystem)
+
 
         self.pushButton_plus.setCheckable(True)
         self.pushButton_minus.setCheckable(True)
         self.pushButton_multiply.setCheckable(True)
         self.pushButton_divide.setCheckable(True)
 
-        self.pushButton_A.setCheckable(True)
-        self.pushButton_B.setCheckable(True)
-        self.pushButton_C.setCheckable(True)
-        self.pushButton_D.setCheckable(True)
-        self.pushButton_E.setCheckable(True)
-        self.pushButton_F.setCheckable(True)
+        # self.pushButton_A.setCheckable(True)
+        # self.pushButton_B.setCheckable(True)
+        # self.pushButton_C.setCheckable(True)
+        # self.pushButton_D.setCheckable(True)
+        # self.pushButton_E.setCheckable(True)
+        # self.pushButton_F.setCheckable(True)
+
+        self.pushButton_bin.setCheckable(True)
+        self.pushButton_oct.setCheckable(True)
+        self.pushButton_hex.setCheckable(True)
 
 
 
@@ -88,23 +96,23 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         
 
 
-    def letterClicked(self):
-        button = self.sender()
+    # def letterClicked(self):
+    #     button = self.sender()
 
-        if ((self.pushButton_A.isChecked() or 
-            self.pushButton_B.isChecked() or 
-            self.pushButton_C.isChecked() or 
-            self.pushButton_D.isChecked() or
-            self.pushButton_E.isChecked() or
-            self.pushButton_F.isChecked()) and (not self.userIsTypingSecondNumber)):
-            newLabel = format(str(button.text()), '.15s')
-            self.userIsTypingSecondNumber = True
-        elif (('.' in self.label.text()) and button.text() == '0'):
-            newLabel = format(self.label.text() + button.text(),'.15')
-        else:
-            newLabel = format(str(self.label.text() + button.text()), '.15')
+    #     if ((self.pushButton_A.isChecked() or 
+    #         self.pushButton_B.isChecked() or 
+    #         self.pushButton_C.isChecked() or 
+    #         self.pushButton_D.isChecked() or
+    #         self.pushButton_E.isChecked() or
+    #         self.pushButton_F.isChecked()) and (not self.userIsTypingSecondNumber)):
+    #         newLabel = format(str(button.text()), '.15s')
+    #         self.userIsTypingSecondNumber = True
+    #     elif (('.' in self.label.text()) and button.text() == '0'):
+    #         newLabel = format(self.label.text() + button.text(),'.15')
+    #     else:
+    #         newLabel = format(str(self.label.text() + button.text()), '.15')
 
-        self.label.setText(newLabel)
+    #     self.label.setText(newLabel)
 
 
 
@@ -220,6 +228,55 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         newLabel = format(labelNumber, '.15s')
         self.label.setText(newLabel)
+
+
+
+    # def binSystem(self):
+    #     button = self.sender()
+    #     labelNumber = self.label.text()
+        
+    #     if self.label.text() == 0 and self.pushButton_bin.down():
+    #         labelNumber = int(str(labelNumber), 2)
+    #     newLabel = format(labelNumber, '.15s')
+    #     self.label.setText(newLabel)
+        
+
+    def convertGetResulst(self):
+        decimal_number = int(self.lineEdit_input1.text())
+        base = int(self.lineEdit_input2.text())
+        
+        STRINGS = '0123456789abcdef'
+        remainder_stack = []
+
+        while decimal_number > 0:
+            remainder = decimal_number % base
+            remainder_stack.append(remainder)
+            decimal_number = decimal_number // base
+
+        new_digits = []
+        while remainder_stack:
+            new_digits.append(STRINGS[remainder_stack.pop()])
+
+        result = ''.join(new_digits)
+        
+
+        self.label.setText(result)
+
+           
+
+
+
+
+
+
+        # number = self.lineEdit_input1.text()
+        # base = int(self.lineEdit_input2.text())
+        # result = int(number, base)
+        # self.label.setText(str(result))
+
+
+
+
 
 
     

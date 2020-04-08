@@ -29,84 +29,6 @@ class Ui_MainWindow(object):
 "\n"
 "background-color : white;")
         self.label.setObjectName("label")
-        self.pushButton_D = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_D.setGeometry(QtCore.QRect(0, 90, 91, 61))
-        self.pushButton_D.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(60, 63, 65);\n"
-"  color: white; \n"
-"  border: 1px solid gray;\n"
-"  font-size: 16pt;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
-"}")
-        self.pushButton_D.setObjectName("pushButton_D")
-        self.pushButton_E = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_E.setGeometry(QtCore.QRect(90, 90, 91, 61))
-        self.pushButton_E.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(60, 63, 65);\n"
-"  color: white; \n"
-"  border: 1px solid gray;\n"
-"  font-size: 16pt;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
-"}")
-        self.pushButton_E.setObjectName("pushButton_E")
-        self.pushButton_F = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_F.setGeometry(QtCore.QRect(180, 90, 91, 61))
-        self.pushButton_F.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(60, 63, 65);\n"
-"  color: white; \n"
-"  border: 1px solid gray;\n"
-"  font-size: 16pt;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
-"}")
-        self.pushButton_F.setObjectName("pushButton_F")
-        self.pushButton_A = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_A.setGeometry(QtCore.QRect(0, 150, 91, 61))
-        self.pushButton_A.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(60, 63, 65);\n"
-"  color: white; \n"
-"  border: 1px solid gray;\n"
-"  font-size: 16pt;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
-"}")
-        self.pushButton_A.setObjectName("pushButton_A")
-        self.pushButton_B = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_B.setGeometry(QtCore.QRect(90, 150, 91, 61))
-        self.pushButton_B.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(60, 63, 65);\n"
-"  color: white; \n"
-"  border: 1px solid gray;\n"
-"  font-size: 16pt;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
-"}")
-        self.pushButton_B.setObjectName("pushButton_B")
-        self.pushButton_C = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_C.setGeometry(QtCore.QRect(180, 150, 91, 61))
-        self.pushButton_C.setStyleSheet("QPushButton {\n"
-"  background-color: rgb(60, 63, 65);\n"
-"  color: white; \n"
-"  border: 1px solid gray;\n"
-"  font-size: 16pt;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
-"}")
-        self.pushButton_C.setObjectName("pushButton_C")
         self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_7.setGeometry(QtCore.QRect(0, 210, 91, 61))
         self.pushButton_7.setStyleSheet("QPushButton {\n"
@@ -443,6 +365,45 @@ class Ui_MainWindow(object):
 "                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
 "}")
         self.pushButton_bin.setObjectName("pushButton_bin")
+        self.lineEdit_input1 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_input1.setGeometry(QtCore.QRect(90, 90, 181, 61))
+        self.lineEdit_input1.setStyleSheet("QLineEdit {\n"
+"  background-color: rgb(48, 50, 55);\n"
+"  color: white; \n"
+"  qproperty-alignment: \'AlignVCenter | AlignRight\';\n"
+"  border: 1px solid gray;\n"
+"  font-size: 18pt;\n"
+" \n"
+"}\n"
+"\n"
+"background-color : white;")
+        self.lineEdit_input1.setObjectName("lineEdit_input1")
+        self.lineEdit_input2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_input2.setGeometry(QtCore.QRect(90, 150, 181, 61))
+        self.lineEdit_input2.setStyleSheet("QLineEdit {\n"
+"  background-color: rgb(48, 50, 55);\n"
+"  color: white; \n"
+"  qproperty-alignment: \'AlignVCenter | AlignRight\';\n"
+"  border: 1px solid gray;\n"
+"  font-size: 18pt;\n"
+" \n"
+"}\n"
+"\n"
+"background-color : white;")
+        self.lineEdit_input2.setObjectName("lineEdit_input2")
+        self.pushButton_convert = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_convert.setGeometry(QtCore.QRect(0, 90, 91, 121))
+        self.pushButton_convert.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(60, 63, 65);\n"
+"  color: white; \n"
+"  border: 1px solid gray;\n"
+"  font_size: 13pt;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
+"}")
+        self.pushButton_convert.setObjectName("pushButton_convert")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -452,12 +413,6 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "0"))
-        self.pushButton_D.setText(_translate("MainWindow", "D"))
-        self.pushButton_E.setText(_translate("MainWindow", "E"))
-        self.pushButton_F.setText(_translate("MainWindow", "F"))
-        self.pushButton_A.setText(_translate("MainWindow", "A"))
-        self.pushButton_B.setText(_translate("MainWindow", "B"))
-        self.pushButton_C.setText(_translate("MainWindow", "C"))
         self.pushButton_7.setText(_translate("MainWindow", "7"))
         self.pushButton_8.setText(_translate("MainWindow", "8"))
         self.pushButton_9.setText(_translate("MainWindow", "9"))
@@ -483,3 +438,4 @@ class Ui_MainWindow(object):
         self.pushButton_hex.setText(_translate("MainWindow", "hex"))
         self.pushButton_oct.setText(_translate("MainWindow", "oct"))
         self.pushButton_bin.setText(_translate("MainWindow", "bin"))
+        self.pushButton_convert.setText(_translate("MainWindow", "Convert"))
