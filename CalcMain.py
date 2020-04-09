@@ -2,18 +2,18 @@
 
 # Form implementation generated from reading ui file 'CalcMain.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.3
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_Calculator(object):
     def setupUi(self, Calculator):
         Calculator.setObjectName("Calculator")
-        Calculator.resize(453, 451)
+        Calculator.resize(452, 453)
+        Calculator.setMinimumSize(QtCore.QSize(452, 453))
+        Calculator.setMaximumSize(QtCore.QSize(452, 453))
         self.centralwidget = QtWidgets.QWidget(Calculator)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
@@ -441,3 +441,4 @@ class Ui_Calculator(object):
         self.lineEdit_input1.setToolTip(_translate("Calculator", "<html><head/><body><p>Введите число</p></body></html>"))
         self.lineEdit_input2.setToolTip(_translate("Calculator", "<html><head/><body><p>Введите систему счисления </p></body></html>"))
         self.pushButton_convert.setText(_translate("Calculator", "Convert"))
+
